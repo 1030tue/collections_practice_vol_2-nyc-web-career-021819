@@ -20,9 +20,11 @@ def first_wa(array)
   array.find {|w| w[0..1] == "wa" }
 end
 
+
 def remove_non_strings(array)
   array.delete_if{ |w| w.to_s != w }
 end
+
 
 def count_elements(array)
   array.uniq.each do |w|
@@ -38,7 +40,6 @@ end
 
 
 def merge_data(keys, data)
-	merged_data=[]
 keys.each do |elem|
 data.each do |data|
 	data.each do |name, info|
