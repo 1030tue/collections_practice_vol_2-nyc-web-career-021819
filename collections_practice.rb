@@ -52,6 +52,8 @@ end
 keys
 end
 
+
+
 def find_cool(array)
 array.select {|data| data[:temperature] == "cool"}
 end
